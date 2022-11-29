@@ -1,0 +1,373 @@
+
+/* TAMPILAN TABLET */
+@media only screen and (max-width: 960px){
+   /* NAVBAR */
+    .navbar{
+        grid-template-columns: 1fr;
+        box-shadow: none;
+        padding: 0;
+    }
+    .navbar_left{
+        padding: 0 96px;
+        box-shadow: 0px 0px 13px 0px #00000017;
+    }
+    .navbar_left span{
+        display: block;
+    }
+    .navbar_right{
+        position: fixed;
+        padding: 32px 0;
+        right: -32vw;
+        background-color: white;
+        width: 30vw;
+        height: 100vh;
+        flex-direction: column;
+        align-items: flex-end;
+        box-shadow: 0px 0px 13px 0px #00000017;
+    }
+    .navbar_right span{
+        display: block;
+        margin-right: 96px;
+        margin-bottom: 64px;
+    }
+    .navbar_right a{
+        margin-right: 96px;
+        margin-bottom: 32px;
+    }
+    .navbar_right a.active{
+        background-color: transparent;
+        padding: 0;
+    }
+    .navbar_right a.active:hover{
+        background-color: transparent;
+        color: #FFCE00;
+    }
+
+
+
+    /* HOME PAGE + ABOUT US PAGE*/
+    .nawaa_desc{
+        flex-direction: column-reverse;
+    }
+    .nawaa_desc_left, .nawaa_desc_right{
+        width: 100%;
+    }
+    .nawaa_desc_left{
+        padding-right: 0;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    .nawaa_advantage_list{
+        grid-template-columns: 50% 50%;
+    }
+    .nawaa_advantage_card{
+        margin-bottom: 32px;
+    }
+
+    .nawaa_service_column{
+        grid-template-columns: 100%;
+    }
+    .nawaa_service_column_left img{
+        width: 50%;
+    }
+    .nawaa_service_column_right{
+        margin-left: 0;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
+    }
+
+
+
+    /* DASHBOARD */
+    .slider_content{
+        width: calc(100vw - 257px);
+        margin: 0 12px;
+    }
+    .slider_prev, .slider_next{
+        width: 12px;
+        height: 32px;
+    }
+    .slider_bullets{
+        margin-top: -48px !important;
+        height: 28px;
+    }
+    .bullets{
+        width: 8px;
+        height: 8px;
+    }
+
+    .dashboard_content_list{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* TAMPILAN MOBILE */
+@media only screen and (max-width: 768px){
+    /* NAVBAR */
+    .navbar_left{
+        padding: 0 32px;
+    }
+    .navbar_right{
+        right: -62vw;
+        width: 60vw;
+    }
+    .navbar_right span{
+        margin-right: 32px;
+    }
+    .navbar_right a{
+        margin-right: 32px;
+    }
+
+
+
+    /* FOOTER */
+    .footer{
+        padding: 48px 32px;
+    }
+    .footer_content{
+        flex-direction: column;
+    }
+    .footer_nawaa_desc, .footer_company, .footer_contact{
+        width: 100%;
+    }
+    .footer_nawaa_desc{
+        padding-right: 0;
+    }
+
+
+
+    /* INDEX + ABOUT US */
+    .nawaa_desc{
+        padding: 0 32px;
+    }
+    .nawaa_desc_right{
+        min-height: 30vh;
+    }
+
+    .nawaa_advantage{
+        padding: 24px 32px;
+    }
+    .nawaa_advantage_list{
+        grid-template-columns: 100%;
+    }
+
+    .nawaa_service_card{
+        margin: 0 32px;
+        margin-top: -220px;
+        padding: 64px 32px;
+    }
+    .nawaa_service_column_left img{
+        width: 80%;
+    }
+    .nawaa_service_list{
+        grid-template-columns: 1fr;
+    }
+
+
+
+    /* AUTH */
+    .auth_container{
+        padding: 32px;
+        grid-template-columns: 100%;
+    }
+    .auth_container_right{
+        width: 100%;
+    }
+    .auth_container_left{
+        background-color: white;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 48px;
+        border-top-left-radius: 32px;
+        border-top-right-radius: 32px;
+    }
+    .auth_container_left img{
+        width: calc(100% - 64px);
+    }
+    .auth_form_card{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        padding-top: 16px;
+    }
+    .auth_form_card h2{
+        text-align: center;
+    }
+
+
+
+    /* DASHBOARD */
+    .dashboard_slider{
+        padding: 0 32px;
+    }
+    .slider_content{
+        width: calc(100vw - 129px);
+    }
+
+    .dashboard_content_list{
+        grid-template-columns: 1fr;
+    }
+    .dashboard_content{
+        padding: 32px;
+    }
+    .content_list{
+        margin: 16px 0;
+    }
+    .content_list_left {
+        min-width: 150px;
+        width: 150px;
+    }
+
+
+
+    /* DETAIL */
+    .product_detailed{
+        padding: 0 32px;
+    }
+    .product_detailed_image{
+        width: 40%;
+        min-width: 40%;
+    }
+    .product_detailed_image img{
+        padding-top: 24px;
+    }
+    .product_detailed_info{
+        margin-left: 24px;
+    }
+    .product_detailed_info h1{
+        font-size: x-large;
+    }
+    .product_detailed_info p{
+        font-size:medium;
+    }
+    .product_detailed_info b{
+        font-size: large;
+    }
+
+    .product_reviews{
+        padding: 32px;
+    }
+    .review_user{
+        flex-direction: column-reverse;
+    }
+    .product_reviews_card{
+        padding: 48px;
+    }
+    .order_column_card{
+        margin: 32px;
+        margin-top: -160px;
+        padding: 48px;
+    }
+    .order_column_card input{
+        width: calc(100% - 64px);
+    }
+    .order_column_button{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #order_column_file_info{
+        margin-left: 0;
+    }
+
+
+
+    /* ORDER DETAIL */
+    .order_detail_steps{
+        padding: 32px;
+    }
+    .detail_steps_image h3, .detail_steps_line h3{
+        font-size: small;
+    }
+    .lines_dashed{
+        border-top: 3px dashed #202020;
+    }
+    .lines_dashed_light{
+        border-top: 3px dashed #FFE36E;
+    }
+
+    .detail_info_card{
+        margin: 0 32px;
+        margin-top: -120px;
+        padding: 32px;
+    }
+    .detail_info{
+        grid-template-columns: 35% 65%;
+    }
+
+
+
+    /* MY ACCOUNT */
+    .account_info{
+        padding: 32px;
+    }
+    .account_info_data{
+        grid-template-columns: 30% 70%;
+    }
+    .account_order_card{
+        margin: 0 32px;
+        margin-top: -200px;
+    }
+    .order_head_all, .order_head_history{
+        font-size: small;
+    }
+    .account_order_list_background{
+        padding: 16px;
+        padding-bottom: 64px;
+    }
+    .account_order_list{
+        padding: 0 16px;
+        padding-top: 8px;
+    }
+
+
+
+    /* EDIT ACCOUNT */
+    .edit_account_card{
+        padding: 32px;
+        margin: 0 32px;
+        margin-top: -200px;
+    }
+
+
+
+    /* PORTOFOLIO */
+    .portofolio_desc{
+        padding: 32px;
+    }
+    .portofolio_image_card{
+        padding: 32px;
+        margin: 0 32px;
+        margin-top: -240px;
+    }
+
+    /* CONTACT US */
+    .contact_info{
+        padding: 32px;
+    }
+    .contact_info_media_social{
+        grid-template-columns: 1fr;
+    }
+    .contact_info_address{
+        width: 70%;
+    }
+    .contact_suggest_card{
+        padding: 32px;
+        margin: 0 32px;
+        margin-top: -200px;
+    }
+
+
+
+    /* PRIVACY POLICY */
+    .privacy_policy_container_card{
+        padding: 32px;
+        margin: 0 32px;
+        margin-top: -340px;
+    }
+    .privacy_policy_container_card h1{
+        text-align: start;
+    }
+}
