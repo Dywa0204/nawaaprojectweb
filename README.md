@@ -5,6 +5,8 @@
     
 > Web Project - Jasa Edit Foto Online
     
+</div>
+    
 <hr>  
     
 # Usage
@@ -23,5 +25,3 @@ Pull requests are welcome. For major changes, please open an issue first to disc
     
 ## Contact
 Contact me for more question : https://wa.me/62895411138785
-    
-</div>
